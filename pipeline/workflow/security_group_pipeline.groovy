@@ -5,7 +5,7 @@ node('master') {
     try {
       sh("gem env")
       sh("gem list")
-      sh("cfndsl --help")
+      sh("/usr/local/bin/cfndsl --help")
     } catch(err) {
       sh("echo goodbye")
     }
