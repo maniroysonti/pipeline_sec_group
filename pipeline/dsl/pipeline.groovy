@@ -1,4 +1,4 @@
-pipeline_repo = "stelligent/pipeline_sec_group.git"
+pipeline_repo = "stelligent/pipeline_sec_group"
 
 workflowJob('security-pipeline') {
   triggers {
