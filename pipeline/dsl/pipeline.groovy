@@ -4,18 +4,16 @@ workflowJob('security-pipeline') {
   triggers {
     scm("* * * * *")
   }
-  multiscm {
-    definition {
-      cpsScm {
-        scm {
-            git {
-              remote {
-                  github(pipeline_repo)
-              }
+  definition {
+    cpsScm {
+      scm {
+          git {
+            remote {
+                github(pipeline_repo)
             }
-        }
-      scriptPath('pipeline/workflow/security_group_pipeline.groovy')
+          }
       }
+    scriptPath('pipeline/workflow/security_group_pipeline.groovy')
     }
   }
 }
