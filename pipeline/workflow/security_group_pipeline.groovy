@@ -3,6 +3,7 @@ node('master') {
   deleteDir()
   stage("Commit")
     try {
+      sh("gem install rdoc")
       sh("gem install cfndsl")
     } catch(err) {
       sh("echo goodbye")
