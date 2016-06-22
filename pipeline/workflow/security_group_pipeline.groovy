@@ -1,6 +1,7 @@
 node('master') {
   stage("Commit")
     try {
+      sh("whoami")
       sh("cfndsl --help")
     } catch(err) {
       sh("echo goodbye")
