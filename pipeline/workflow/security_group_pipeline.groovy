@@ -3,9 +3,7 @@ node('master') {
     try {
       sh("export PATH=$PATH:/usr/local/share/ruby/gems/2.0")
       sh("cfndsl --help")
-    } catch(err) {
-      sh("echo goodbye")
-    }
+
   stage("Acceptance")
     try {
       sh("echo hello1")
