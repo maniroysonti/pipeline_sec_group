@@ -2,6 +2,8 @@ node('master') {
   stage("Commit")
     try {
       sh("ruby -v")
+      sh("which ruby")
+        sh("gem list")
       sh("cfndsl --help")
     } catch(err) {
       sh("echo goodbye")
