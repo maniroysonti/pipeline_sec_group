@@ -1,6 +1,8 @@
 node('master') {
   stage("Commit")
       sh("echo hello")
+    sh("gem environment")
+    sh("gem list")
       sh("cfndsl --help")
   stage("Acceptance")
     try {
