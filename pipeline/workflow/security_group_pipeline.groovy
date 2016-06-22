@@ -1,9 +1,8 @@
 node('master') {
   stage("Commit")
     try {
-      sh("gem env")
-      sh("gem list")
-      sh("/usr/local/bin/cfndsl --help")
+      sh("ruby -v")
+      sh("gem install cfndsl")
     } catch(err) {
       sh("echo goodbye")
     }
