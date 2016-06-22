@@ -1,7 +1,7 @@
 node('master') {
   stage("Commit")
     try {
-      sh("whoami")
+      sh("export PATH=$PATH:/usr/local/share/ruby/gems/2.0")
       sh("cfndsl --help")
     } catch(err) {
       sh("echo goodbye")
