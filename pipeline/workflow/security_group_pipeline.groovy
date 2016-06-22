@@ -1,6 +1,4 @@
-
 node('master') {
-  deleteDir()
   stage("Commit")
     try {
       sh("gem env")
