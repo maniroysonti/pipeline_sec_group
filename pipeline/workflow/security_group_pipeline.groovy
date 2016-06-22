@@ -3,7 +3,7 @@ node('master') {
       sh("echo hello")
     sh("gem environment")
     sh("gem install json")
-      sh("/var/lib/jenkins/bin/cfndsl --help")
+      sh("GEM_PATH=/usr/local/share/ruby/gems/2.0:/usr/share/ruby/gems/2.0 /var/lib/jenkins/bin/cfndsl --help")
   stage("Acceptance")
     try {
       sh("echo hello1")
