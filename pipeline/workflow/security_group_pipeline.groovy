@@ -2,7 +2,7 @@ node('master') {
   stage("Commit")
     try {
       sh("ruby -v")
-      sh("gem install cfndsl")
+      sh("gem install rdoc cfndsl")
     } catch(err) {
       sh("echo goodbye")
     }
