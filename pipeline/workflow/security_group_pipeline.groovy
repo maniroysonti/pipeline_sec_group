@@ -2,7 +2,7 @@ node('master') {
   stage("Commit")
       sh("echo hello")
     sh("gem environment")
-    sh("gem list")
+    sh("gem install json")
       sh("/var/lib/jenkins/bin/cfndsl --help")
   stage("Acceptance")
     try {
