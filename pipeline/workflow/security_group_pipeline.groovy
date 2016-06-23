@@ -1,5 +1,6 @@
 node('master') {
   stage("Commit")
+    git url: 'https://github.com/stelligent/pipeline_sec_group.git'
     sh("ps -p \$\$")
     sh("echo \$0")
     sh("which ruby")
