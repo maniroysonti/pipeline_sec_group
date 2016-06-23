@@ -6,7 +6,6 @@ node('master') {
     sh("gem environment")
     sh("gem list")
     sh("pipeline/scripts/test.sh")
-    sh("cfndsl --help")
   stage("Acceptance")
     try {
       sh("echo hello1")
