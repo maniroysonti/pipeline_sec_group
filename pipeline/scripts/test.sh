@@ -1,5 +1,5 @@
 #!/bin/bash
 
-use rvm
+rvm use
 
 cfndsl --help
