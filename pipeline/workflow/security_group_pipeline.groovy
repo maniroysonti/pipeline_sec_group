@@ -5,6 +5,7 @@ node('master') {
     sh("which ruby")
     sh("gem environment")
     sh("gem list")
+    sh("pipeline/script/test.sh")
     sh("cfndsl --help")
   stage("Acceptance")
     try {
