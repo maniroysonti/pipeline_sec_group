@@ -1,6 +1,7 @@
 node('master') {
   stage("Commit")
-    sh("echo $0")
+    sh("ps -p \$\$")
+    sh("echo \$0")
     sh("which ruby")
     sh("gem environment")
     sh("gem list")
