@@ -1,6 +1,6 @@
 node('master') {
   stage("Commit")
-    sh("source /var/lib/jenkins/.rvm/scripts/rvm")
+    sh("ps -p $$")
     sh("which ruby")
     sh("gem environment")
     sh("gem list")
