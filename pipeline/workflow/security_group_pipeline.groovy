@@ -2,6 +2,7 @@ node('master') {
   stage("Commit")
     sh("which ruby")
     sh("gem environment")
+    sh("gem list")
     sh("cfndsl --help")
   stage("Acceptance")
     try {
