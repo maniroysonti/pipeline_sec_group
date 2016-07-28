@@ -1,0 +1,27 @@
+VpcId: vpc-fad5959f
+IngressRules:
+  - rule1:
+    cidr: 0.0.0.0/0
+    from: 80
+    to: 80
+    protocol: 6
+  - rule2:
+    cidr: 0.0.0.0/0
+    from: 8080
+    to: 8080
+    protocol: 6
+  - rule3:
+    cidr: 0.0.0.0/0
+    from: 443
+    to: 443
+    protocol: 6
+  - rule4:
+    cidr: 0.0.0.0/0
+    from: 443
+    to: 443
+    protocol: 6
+  - rule4:
+    cidr: 0.0.0.0/0
+    from: 8443
+    to: 8443
+    protocol: 6

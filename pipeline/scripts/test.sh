@@ -2,4 +2,4 @@
 
 source /var/lib/jenkins/.rvm/scripts/rvm
 
-cfndsl --help
+cfndsl -y env/security_group_rules.yml cfn security_groups.rb > sec_groups.json
